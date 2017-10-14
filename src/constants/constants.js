@@ -21,7 +21,7 @@ constants.linkListTypes = {
     SKILLS : 'skills'
 };
 
-.constants.skillsHeader = [
+constants.skillsHeader = [
     'Languages',
     'FrameWorks',
     'Testing',

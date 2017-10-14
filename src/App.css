@@ -11,7 +11,7 @@ html, body {
   margin: 0;
   padding: 0;
   border: 0;
-  color: white;
+  color: rgb(255,255,255) !important;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 200;
   letter-spacing: 3px;
@@ -129,7 +129,6 @@ html, body {
 .modal-content{
   font-weight: 200;
   font-size: 1.2rem;
-  padding: 2rem;
 }
 
 .modal-content a {
@@ -165,6 +164,7 @@ html, body {
 
 .about-me-container {
   text-align: center;
+  padding: 1.5rem;
 }
 
 .bio {
@@ -172,6 +172,48 @@ html, body {
   font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: 0;
+}
+
+.skills-container {
+  margin-top: 7rem;
+}
+
+.header-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.skill-section {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: rgb(32,32,32);
+  margin-top: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 1rem;
+}
+
+.skill {
+  display: inline-block;
+  width: 100%;
+  background-color: rgb(0,0,0);
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+}
+
+.skill img {
+  display: inline-block;
+  width: 2rem;
+  margin: 0 1rem;
+}
+
+.skill span {
+  vertical-align: top;
+  line-height: 2rem;
 }
 
 

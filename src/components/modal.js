@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import FontAwesome from 'react-fontawesome';
-import Constants from '../constants/constants';
+import constants from '../constants/constants';
 
-let skillsHeader = Constants.skillsHeader;
+let skillsHeader = constants.skillsHeader;
 
 class Modal extends Component {
 
@@ -31,12 +31,115 @@ class Modal extends Component {
             case 'SKILLS':
                 return (
                     <div className="skills-container">
-                      <div className="header">
+                      <div className="header-container">
+                          { skillsHeader.map((headerName, index) => {
+                              return (
+                              <div key={index} className="skill-section">
+                                  <div className="header">{headerName}</div>
+                                  <div className="skill-container">
+                                      {this.getSkillsListForSection(headerName)}
+                                  </div>
 
+                              </div>
+                              )
+                          })}
                       </div>
                     </div>
                 )
                 break;
+        }
+    }
+
+    getSkillsListForSection(section){
+        switch(section){
+            case 'Languages':
+                return (
+                    <div>
+                        <div className="skill">
+                            <img src={require("../assets/logos/java.svg")} />
+                            <span>Java</span>
+                        </div>
+                        <div className="skill">
+                            <img src={require("../assets/logos/javascript.svg")}/>
+                            <span>Javascript</span>
+                        </div>
+                        <div className="skill">
+                            <img src={require("../assets/logos/css3.svg")}/>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                );
+            break;
+            case 'FrameWorks':
+                return (
+                    <div>
+                        <div className="skill">
+                            <img src={require("../assets/logos/react.svg")}/>
+                            <span>React</span>
+                        </div>
+                        <div className="skill">
+                            <img src={require("../assets/logos/angular.svg")}/>
+                            <span>Angular</span>
+                        </div>
+                        <div className="skill">
+                            <img src={require("../assets/logos/backbone.svg")}/>
+                            <span>Backbone</span>
+                        </div>
+                        <div className="skill">
+                            <img src={require("../assets/logos/express.svg")}/>
+                            <span>Express</span>
+                        </div>
+                        <div className="skill">
+                            <img src={require("../assets/logos/sass.svg")}/>
+                            <span>Sass</span>
+                        </div>
+                    </div>
+                );
+                break;
+            case 'Testing':
+                return (
+                    <div>
+                        <div>
+                            <div className="skill">
+                                <img src={require("../assets/logos/protractor.svg")}/>
+                                <span>Protractor</span>
+                            </div>
+                            <div className="skill">
+                                <img src={require("../assets/logos/jasmine.svg")}/>
+                                <span>Jasmine</span>
+                            </div>
+                            <div className="skill">
+                                <img src={require("../assets/logos/mocha.svg")}/>
+                                <span>Mocha</span>
+                            </div>
+                        </div>
+                    </div>
+                );
+                break;
+            case 'Other':
+                return (
+                    <div>
+                        <div className="skill">
+                            <img src={require("../assets/logos/mongo.svg")}/>
+                            <span>MongoDB</span>
+                        </div>
+                        <div className="skill">
+                            <img src={require("../assets/logos/node.svg")}/>
+                            <span>NodeJS</span>
+                        </div>
+                        <div className="skill">
+                            <img src={require("../assets/logos/aws.svg")}/>
+                            <span>AWS</span>
+                        </div>
+                        <div className="skill">
+                            <img src={require("../assets/logos/grunt.svg")}/>
+                            <span>GruntJS</span>
+                        </div>
+                    </div>
+                );
+                break;
+            default:
+                return null;
         }
     }
 
