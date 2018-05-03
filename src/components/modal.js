@@ -8,6 +8,7 @@ class Modal extends Component {
 
     getSection(){
         const {section} = this.props;
+        console.log(section);
         switch(section){
             case 'ABOUT_ME':
                 return (
@@ -45,10 +46,18 @@ class Modal extends Component {
                           })}
                       </div>
                     </div>
-                )
+                );
+                break;
+            case 'PROJECTS':
+                return (
+                    <div>Coming Soon</div>
+                );
+                break;
+            default:
+                return null;
                 break;
         }
-    }
+    };
 
     getSkillsListForSection(section){
         switch(section){

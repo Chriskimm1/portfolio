@@ -18,6 +18,7 @@ class Home extends Component {
             expandName: false,
             openAboutMe: false,
             openSkills : false,
+            openProjects : false,
             openContactMe : false
         };
 
@@ -63,6 +64,10 @@ class Home extends Component {
                 stateObj['openSkills'] = true;
                 currentlyOpenModal = 'openSkills';
                 break;
+            case 'projects':
+                stateObj['openProjects'] = true;
+                currentlyOpenModal = 'openProjects';
+                break;
             default:
                 stateObj['openAboutMe'] = true;
                 currentlyOpenModal = 'openAboutMe';
@@ -98,9 +103,26 @@ class Home extends Component {
               </div>
               {this.state.openAboutMe && <Modal title="About" section='ABOUT_ME' close={this.closeAboutMe}/>}
               {this.state.openSkills && <Modal title="Skills" section='SKILLS' close={this.closeAboutMe}/>}
+              {this.state.openProjects && <Modal title="Projects" section='PROJECTS' close={this.closeAboutMe}/>}
           </div>
         );
     }
 }
 
 export default Home;
+
+function countPairs(numbers, k) {
+    var numberK = [];
+    numbers.forEach(function(number){
+        numberK.push( number + k );
+    } );
+
+    var results = numbers.reduce( function(sum, value){
+        if (numberK.includes(value) && !sum.includes(value)){
+            sum.push(value);
+        }
+        return sum;
+    }, [] );
+
+    return results.length;
+}
