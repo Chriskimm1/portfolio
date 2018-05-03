@@ -1,0 +1,23 @@
+{
+  "main.css": "static/css/main.bf02aff9.css",
+  "main.css.map": "static/css/main.bf02aff9.css.map",
+  "main.js": "static/js/main.d3cd1224.js",
+  "main.js.map": "static/js/main.d3cd1224.js.map",
+  "static/media/angular.svg": "static/media/angular.db12f97b.svg",
+  "static/media/aws.svg": "static/media/aws.0292ec4e.svg",
+  "static/media/backbone.svg": "static/media/backbone.39eac6f4.svg",
+  "static/media/background.jpeg": "static/media/background.9889d02c.jpeg",
+  "static/media/css3.svg": "static/media/css3.a70a7e3e.svg",
+  "static/media/express.svg": "static/media/express.c3af8b67.svg",
+  "static/media/grunt.svg": "static/media/grunt.bf05268b.svg",
+  "static/media/jasmine.svg": "static/media/jasmine.87220f71.svg",
+  "static/media/java.svg": "static/media/java.66517ded.svg",
+  "static/media/javascript.svg": "static/media/javascript.de79c8f1.svg",
+  "static/media/mocha.svg": "static/media/mocha.14785336.svg",
+  "static/media/mongo.svg": "static/media/mongo.52783a2f.svg",
+  "static/media/node.svg": "static/media/node.ccb43d34.svg",
+  "static/media/profile_pic.jpg": "static/media/profile_pic.4bfeeefb.jpg",
+  "static/media/protractor.svg": "static/media/protractor.a297bd83.svg",
+  "static/media/react.svg": "static/media/react.e9f3d01c.svg",
+  "static/media/sass.svg": "static/media/sass.88c10477.svg"
+}
